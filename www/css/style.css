@@ -1,0 +1,12 @@
+/* Empty. Add your own CSS if you like */
+
+.semBorda{
+	border: none;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

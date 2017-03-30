@@ -1,0 +1,40 @@
+<ion-view view-title="Cliente">
+  <ion-content class="padding">
+    <h4><b>Dados do Cliente</b></h4>
+
+    <div class="list">
+      <label class="item item-input item-stacked-label semBorda">
+        <span class="input-label">Nome</span>
+        <input type="text" id="nome" name="nome" placeholder="Ítalo" ng-model="item.nome">
+      </label>
+      <label class="item item-input item-stacked-label semBorda">
+        <span class="input-label">Telefone</span>
+        <input type="text" placeholder="(16) 99999-9999" id="tel" name="tel" ng-model="item.tel">
+      </label>
+      <label class="item item-input item-stacked-label semBorda">
+        <span class="input-label">CEP</span>
+        <input type="text" placeholder="14405-590" id="cep" name="cep" ng-model="item.cep">
+      </label>
+    </div>
+
+
+    <button class="button button-balanced icon-right ion-plus-round col-offset-33" ng-click="addList(item)">
+      Adicionar
+    </button>
+    
+    <ion-list>
+      <ion-item ng-repeat="item in list">
+        <h2><u>Cliente:</u></h2>
+        Nome: {{item.nome}}<br>
+        Telefone: {{item.tel}}<br>
+        CEP: {{item.cep}}
+      </ion-item>
+    </ion-list> 
+
+    <button class="button button-block button-positive icon-right ion-chevron-right" ng-click="redirect()">
+      Próximo
+    </button>  
+    
+
+  </ion-content>
+</ion-view>
